@@ -42,25 +42,25 @@ export default function ReviewsPage() {
       </section>
       </ScrollReveal>
 
-      <ScrollReveal delay={80}>
       <section className="reviews-main" aria-label="Customer reviews">
         <div className="section-beans-left" aria-hidden="true" />
         <div className="section-beans-right" aria-hidden="true" />
         <div className="section-content">
           <div className="reviews-grid">
             {reviews.map((review, i) => (
-              <article key={i} className="review-card">
+              <ScrollReveal key={i} delay={i * 60}>
+              <article className="review-card">
                 <div className="review-stars" aria-hidden="true">
                   {"★".repeat(review.stars)}
                 </div>
                 <blockquote>{review.quote}</blockquote>
                 <cite>— {review.author}</cite>
               </article>
+              </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
-      </ScrollReveal>
     </div>
   );
 }

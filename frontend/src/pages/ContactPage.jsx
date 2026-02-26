@@ -34,12 +34,12 @@ export default function ContactPage() {
       </section>
       </ScrollReveal>
 
-      <ScrollReveal delay={80}>
       <section className="contact-main" aria-label="Contact form and location">
         <div className="section-beans-left" aria-hidden="true" />
         <div className="section-beans-right" aria-hidden="true" />
         <div className="section-content">
       <div className="contact-layout">
+        <ScrollReveal delay={80}>
         <div className="contact-info">
           <div className="map-placeholder">
             <span>Byte Beans HQ</span>
@@ -62,7 +62,9 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal delay={120}>
         <div className="contact-form-wrap">
           <h3>Send us a message</h3>
           {submitted ? (
@@ -81,10 +83,10 @@ export default function ContactPage() {
             </form>
           )}
         </div>
+        </ScrollReveal>
       </div>
         </div>
       </section>
-      </ScrollReveal>
     </div>
   );
 }

@@ -35,13 +35,13 @@ export default function MenuPage() {
       </ScrollReveal>
 
       {/* Menu grid - dark background */}
-      <ScrollReveal delay={80}>
       <section className="menu-section" aria-label="Drinks">
         <div className="section-beans-left" aria-hidden="true" />
         <div className="section-beans-right" aria-hidden="true" />
         <div className="menu-grid">
-        {menuItems.map((item) => (
-          <article key={item.name} className="menu-card">
+        {menuItems.map((item, i) => (
+          <ScrollReveal key={item.name} delay={i * 50}>
+          <article className="menu-card">
             <div className="menu-card-image-wrap">
               <div className="menu-card-frame">
                 <img
@@ -69,10 +69,10 @@ export default function MenuPage() {
               </button>
             </div>
           </article>
+          </ScrollReveal>
         ))}
         </div>
       </section>
-      </ScrollReveal>
     </div>
   );
 }

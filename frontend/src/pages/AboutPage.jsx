@@ -47,22 +47,24 @@ export default function AboutPage() {
       </section>
       </ScrollReveal>
 
-      <ScrollReveal delay={80}>
       <section className="about-main" aria-labelledby="about-story-title">
         <div className="section-beans-left" aria-hidden="true" />
         <div className="section-beans-right" aria-hidden="true" />
         <div className="section-content">
           <div className="about-features-wrap">
             <div className="features-grid">
-              {features.map((feature) => (
-                <article key={feature.title} className="feature-card">
+              {features.map((feature, i) => (
+                <ScrollReveal key={feature.title} delay={i * 80}>
+                <article className="feature-card">
                   {feature.icon}
                   <h3>{feature.title}</h3>
                   <p>{feature.description}</p>
                 </article>
+                </ScrollReveal>
               ))}
             </div>
           </div>
+          <ScrollReveal delay={100}>
           <div className="about-story">
             <h2 id="about-story-title">Our Story</h2>
             <p>
@@ -72,9 +74,9 @@ export default function AboutPage() {
               Today, we serve thousands of coders, creators, and coffee lovers every week.
             </p>
           </div>
+          </ScrollReveal>
         </div>
       </section>
-      </ScrollReveal>
     </div>
   );
 }
