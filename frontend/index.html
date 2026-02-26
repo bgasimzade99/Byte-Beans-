@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Byte Beans - Specialty coffee crafted for builders, thinkers, and late-night creators. Where caffeine meets clean architecture. Developer-friendly café with fast Wi-Fi and premium roasts." />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Byte Beans - Coffee for Developers" />
+    <meta property="og:description" content="Specialty coffee crafted for builders, thinkers, and late-night creators. Where caffeine meets clean architecture." />
+    <meta property="og:image" content="/image.png" />
+    <meta property="og:url" content="https://bytebeans.example.com" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Byte Beans - Coffee for Developers" />
+    <meta name="twitter:description" content="Specialty coffee crafted for builders, thinkers, and late-night creators." />
+    <meta name="twitter:image" content="/image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <title>Byte Beans - Specialty Coffee for Developers</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CoffeeShop",
+      "name": "Byte Beans",
+      "image": "/image.png",
+      "url": "https://bytebeans.example.com",
+      "description": "Specialty coffee crafted for builders, thinkers, and late-night creators. Where caffeine meets clean architecture.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Code Lane, Suite 42",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94105"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "20:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "17:00" }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

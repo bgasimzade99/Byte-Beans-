@@ -1,0 +1,23 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0f0f12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-content {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.app-content.visible {
+  opacity: 1;
+}
